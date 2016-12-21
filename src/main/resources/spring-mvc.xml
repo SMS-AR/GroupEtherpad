@@ -14,10 +14,11 @@
 	<mvc:annotation-driven />
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/grouppad/**" location="/grouppad/" />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/"></property>
-		<property name="suffix" value=".jsp"></property>
+		<property name="suffix" value=".html"></property>
 	</bean>
 </beans>
